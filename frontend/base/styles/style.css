@@ -1,0 +1,294 @@
+/* =========================
+   CORES DO PROJETO
+   ========================= */
+
+:root {
+    --cor-principal: #8B1E2D;
+    --cor-principal-escura: #6F1623;
+
+    --cor-secundaria: #C8A56A;
+    --cor-destaque: #E8D7B7;
+
+    --cor-fundo: #FAF8F4;
+    --cor-branco: #FFFFFF;
+
+    --cor-texto: #333333;
+    --cor-texto-secundario: #666666;
+
+    --cor-borda: #E2DDD5;
+}
+
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================
+   CONTAINER
+   ========================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    background-color: var(--cor-branco);
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.header-content {
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo img {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+
+/* =========================
+   NAVEGAÇÃO
+   ========================= */
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-list a {
+    color: var(--cor-texto);
+    font-size: 0.95rem;
+
+    transition: color 0.2s ease;
+}
+
+.nav-list a:hover {
+    color: var(--cor-principal);
+}
+
+
+/* =========================
+   BOTÕES
+   ========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 9px 18px;
+
+    border-radius: 5px;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-principal-escura);
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+.main {
+    min-height: 65vh;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section h1 {
+    margin-bottom: 10px;
+
+    color: var(--cor-principal);
+
+    font-size: 2rem;
+}
+
+.section-description {
+    color: var(--cor-texto-secundario);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    margin-top: 40px;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding: 40px 0;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.footer p {
+    color: var(--cor-branco);
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-links a {
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+/* Tablet e telas menores (até 768px) */
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+        order: 3;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
+    .section h1 {
+        font-size: 1.6rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
+
+/* Celular (até 480px) */
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .header-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section h1 {
+        font-size: 1.4rem;
+    }
+}
