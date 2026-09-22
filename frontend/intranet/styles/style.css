@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(../../base/styles/style.css);
 
 * {
@@ -61,4 +62,61 @@ body {
     font-weight: 600;
 
     box-sizing: border-box;
+=======
+@import url("../../base/styles/style.css");
+
+.data-table {
+    width: 100%;
+    border: 2px solid var(--cor-texto-secundario);
+    border-collapse: separate;
+    border-radius: 12px;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.data-table th, td {
+    padding: 9px 12px;
+    min-width: 200px;
+    text-align: left;
+}
+
+.data-table tr {
+    border-top: 1px solid var(--cor-texto-secundario);
+}
+
+.data-table tbody tr:first-child td {
+    border-top: none;
+}
+
+.positive-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-positivo);
+    border-radius: 50px;
+    color: white;
+}
+
+.negative-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-negativo);
+    border-radius: 50px;
+    color: white;
+}
+
+.neutral-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-neutro);
+    border-radius: 50px;
+    color: white;
+}
+
+.alert-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-alerta);
+    border-radius: 50px;
+    color: white;
+>>>>>>> f03eca2e7a448109305b0f571a927cab876169e2
 }

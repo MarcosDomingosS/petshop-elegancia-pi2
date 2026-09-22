@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop Elegância - Agendamentos</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../../base/styles/style.css">
 </head>
 <body>
     <header></header>
@@ -30,42 +32,39 @@
                 </div>                                
             </div>
         </div>
-        <div id="table">
-            <div id="header-table">
-                <div>
-                    <span>Horário</span>
-                </div>
-                <div>
-                    <span>Pet</span>
-                </div>
-                <div>
-                    <span>Cliente</span>
-                </div>
-                <div>
-                    <span>Serviço</span>
-                </div>
-                <div>
-                    <span>Status</span>
-                </div>
-            </div>
-            <div id="line-table">
-                <div>
-                    <span>09:00</span>
-                </div>
-                <div>
-                    <span>Thor</span>
-                </div>
-                <div>
-                    <span>Marta Santos</span>
-                </div>
-                <div>
-                    <span>Banho e Tosa</span>
-                </div>
-                <div>
-                    <span>Confirmado</span>
-                </div>              
-            </div>
+        <div>
+            <table id="appointments" class="data-table">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Pet</th>
+                        <th>Cliente</th>
+                        <th>Serviço</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Thor</td>
+                        <td>Marta Santos</td>
+                        <td>Banho e Tosa</td>
+                        <td class="positive-status">Confirmado</td>
+                        <td><button><img src="" alt=""></button><button><img src="" alt=""></button></td>  
+                    </tr>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Carlinhos</td>
+                        <td>Marta Santos</td>
+                        <td>Banho</td>
+                        <td class="alert-status">Confirmado</td>
+                        <td><button><img src="" alt=""></button><button><img src="" alt=""></button></td>  
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        
     </main>
 </body>
 </html>
