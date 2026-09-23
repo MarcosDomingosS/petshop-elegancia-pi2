@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url(../../base/styles/style.css);
 
 * {
@@ -33,6 +32,10 @@ body {
     display: flex;
 }
 
+main{
+    padding: 5px;
+}
+
 .navbar {
     width: 20%;
     height: 100vh;
@@ -62,7 +65,8 @@ body {
     font-weight: 600;
 
     box-sizing: border-box;
-=======
+}
+
 @import url("../../base/styles/style.css");
 
 .data-table {
@@ -75,8 +79,8 @@ body {
 }
 
 .data-table th, td {
-    padding: 9px 12px;
-    min-width: 200px;
+    padding: 3px 12px;
+    min-width: 150px;
     text-align: left;
 }
 
@@ -93,7 +97,7 @@ body {
     text-align: center;
     background-color: var(--cor-status-positivo);
     border-radius: 50px;
-    color: white;
+    color: var(--cor-texto-status-positivo);
 }
 
 .negative-status{
@@ -101,7 +105,7 @@ body {
     text-align: center;
     background-color: var(--cor-status-negativo);
     border-radius: 50px;
-    color: white;
+    color: var(--cor-texto-status-negativo);
 }
 
 .neutral-status{
@@ -109,7 +113,7 @@ body {
     text-align: center;
     background-color: var(--cor-status-neutro);
     border-radius: 50px;
-    color: white;
+    color: var(--cor-texto-status-neutro);
 }
 
 .alert-status{
@@ -117,6 +121,11 @@ body {
     text-align: center;
     background-color: var(--cor-status-alerta);
     border-radius: 50px;
-    color: white;
->>>>>>> f03eca2e7a448109305b0f571a927cab876169e2
+    color: var(--cor-texto-status-alerta);
+}
+
+.actions{
+    display: flex;
+    gap: 0;
+    justify-content: center;
 }
