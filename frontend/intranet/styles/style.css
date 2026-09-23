@@ -129,3 +129,23 @@ main{
     gap: 0;
     justify-content: center;
 }
+
+.statistics{
+    display: flex;
+}
+
+.statistics .statistic{
+    border: 2px solid var(--cor-texto-secundario);
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.orange{
+    color: orange;
+}
