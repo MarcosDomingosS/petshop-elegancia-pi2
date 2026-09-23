@@ -1,0 +1,151 @@
+@import url(../../base/styles/style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    display: flex;
+}
+
+main{
+    padding: 5px;
+}
+
+.navbar {
+    width: 20%;
+    height: 100vh;
+    background-color: white;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.main {
+    width: 80%;
+}
+
+.header-navbar {
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 24px;
+
+    background-color: white;
+    color: #333;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+@import url("../../base/styles/style.css");
+
+.data-table {
+    width: 100%;
+    border: 2px solid var(--cor-texto-secundario);
+    border-collapse: separate;
+    border-radius: 12px;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.data-table th, td {
+    padding: 3px 12px;
+    min-width: 150px;
+    text-align: left;
+}
+
+.data-table tr {
+    border-top: 1px solid var(--cor-texto-secundario);
+}
+
+.data-table tbody tr:first-child td {
+    border-top: none;
+}
+
+.positive-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-positivo);
+    border-radius: 50px;
+    color: var(--cor-texto-status-positivo);
+}
+
+.negative-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-negativo);
+    border-radius: 50px;
+    color: var(--cor-texto-status-negativo);
+}
+
+.neutral-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-neutro);
+    border-radius: 50px;
+    color: var(--cor-texto-status-neutro);
+}
+
+.alert-status{
+    margin: 12px;
+    text-align: center;
+    background-color: var(--cor-status-alerta);
+    border-radius: 50px;
+    color: var(--cor-texto-status-alerta);
+}
+
+.actions{
+    display: flex;
+    gap: 0;
+    justify-content: center;
+}
+
+.statistics{
+    display: flex;
+}
+
+.statistics .statistic{
+    border: 2px solid var(--cor-texto-secundario);
+}
+
+.blue{
+    color: blue;
+}
+
+.green{
+    color: green;
+}
+
+.orange{
+    color: orange;
+}

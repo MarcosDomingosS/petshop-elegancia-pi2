@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Elegância - Agendamentos</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../../base/styles/style.css">
+    <script src="../scripts/components/header.intranet.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-navbar">Elegância Petshop</div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="agendamentos.html">Agendamentos</a>
+        <a href="consultations/clients.html">Clientes</a>
+        <a href="consultations/pets.html">Pets</a>
+    </div>
+    <div class="main">
+        <header-intranet></header-intranet>
+        <main>
+            <div id="side-bar">
+                <div>
+                    <span>Filtro por data</span>
+                    <input type="datetime-local">
+                </div>
+                <div class="statistics">
+                    <span>Estatística do dia</span>
+                    <div class="statistic">
+                        <span class="value blue">5</span>
+                        <span class="desc">Total de Agendamentos</span>
+                    </div>
+                    <div class="statistic">
+                        <span class="value green">3</span>
+                        <span class="desc">Confirmados</span>
+                    </div>
+                    <div class="statistic">
+                        <span class="value orange">2</span>
+                        <span class="desc">Pendentes</span>
+                    </div>                                
+                </div>
+            </div>
+            <div>
+                <table id="appointments" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Pet</th>
+                            <th>Cliente</th>
+                            <th>Serviço</th>
+                            <th>Status</th>
+                            <th style="text-align: center">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00</td>
+                            <td>Thor</td>
+                            <td>Marta Santos</td>
+                            <td>Banho e Tosa</td>
+                            <td class="positive-status">Confirmado</td>
+                            <td class="actions"><img src="../assets/edit.svg" height="25px" width="25px"><img src="../assets/trash.svg" height="25px" width="25px"></td> 
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>Roberto Carlos</td>
+                            <td>Marta Santos</td>
+                            <td>Banho</td>
+                            <td class="negative-status">Cancelada</td>
+                            <td class="actions"><img src="../assets/edit.svg" height="25px" width="25px"><img src="../assets/trash.svg" height="25px" width="25px"></td>  
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>DJ Maio</td>
+                            <td>Marta Santos</td>
+                            <td>Banho</td>
+                            <td class="alert-status">Aguardando Confirmação</td>
+                            <td class="actions"><img src="../assets/edit.svg" height="25px" width="25px"><img src="../assets/trash.svg" height="25px" width="25px"></td> 
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>DJ Setembro</td>
+                            <td>Marta Santos</td>
+                            <td>Banho</td>
+                            <td class="neutral-status">Status Neutro</td>
+                            <td class="actions"><img src="../assets/edit.svg" height="25px" width="25px"></td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
